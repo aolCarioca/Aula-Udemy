@@ -1,5 +1,0 @@
-border: 1px solid red;
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Aenean dignissim interdum nunc. Quisque posuere placerat 
-ex eget egestas. Nunc lobortis nibh pulvinar eros ullamcorper luctus.
