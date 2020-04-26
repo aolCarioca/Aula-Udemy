@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Document</title>
+        <title>Jogo Mata Mosquito - Tela Principal</title>
         
         <link rel="stylesheet" href="estilo.css">
         <script src="jogo.js"></script>
@@ -16,15 +16,15 @@
                 <img id="v2" src="imagens/coracao_cheio.png" />
                 <img id="v3" src="imagens/coracao_cheio.png" />
             </div>
-
-            <div class="cronometro">Tempo restante: ?</div> 
-
+            <div class="cronometro">Tempo restante: <span id="cronometro"></span></div> 
         </div>
 
         <script>
-            setInterval(function(){
+            document.getElementById('cronometro').innerHTML = tempo
+
+            var criaMosquito = setInterval(function(){
                 posicaoRandomica()
-            }, 2000)
+            }, cariaMosquitoTempo)
         </script>
 
 
