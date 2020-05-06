@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let nome = 'Jorge'
+        let idade = 29
+        let sexo = 'Masculino'
+        let profissao = 'programador'
+
+        let objeto = {
+            nome: nome,
+            idade: idade,
+            sexo: sexo,
+            profissao: profissao,
+            exibirResumo: function() {
+                console.log(`${this.nome}, ${this.idade} anos,  ${this.sexo} é ${this.profissao}`)
+                
+            }
+        }
+        
+        console.log(objeto)
+        objeto.exibirResumo()
+
+        let objeto2 = {
+            nome, //nome = nome da variávl / valor = valor da variável
+            idade,
+            sexo,
+            profissao,
+            exibirResumo() {
+                console.log(`${this.nome}, ${this.idade} anos,  ${this.sexo} é ${this.profissao}`)
+                
+            }
+        }
+
+        console.log(objeto2)
+        objeto2.exibirResumo()
+
+        let objeto3 = {
+            nomeCli: nome, //nome = nome da variávl / valor = valor da variável
+            IdadeCli:idade,
+            sexCli:  sexo,
+            profCli:  profissao,
+            exibirResumo() {
+                console.log(`${this.nome}, ${this.idade} anos,  ${this.sexo} é ${this.profissao}`)
+                
+            }
+        }
+
+        console.log(objeto3)
+        objeto3.exibirResumo()
+    
+    </script>    
+    
+</head>
+<body>
+  
+    
+</body>
+</html>
