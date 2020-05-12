@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+    let produto = {
+        descricao: 'Notebook',
+        preco: 18000,
+        detalhes: {
+            fabricante: 'abc',
+            modelo: undefined
+        }
+    }
+
+    //token do destructuring
+    //array => []
+    //objeto => {}
+
+    // let { descricao, preco } = produto
+    //console.log(descricao, preco)
+
+    //let { descricao: d, preco: p, desconto } = produto
+    //console.log(d, p, desconto)
+
+     //let { descricao: d, preco: p, desconto = 5 } = produto
+     //console.log(d, p, desconto)
+
+     //let { descricao: d, preco: p = 1000, desconto = 5 } = produto
+     //console.log(d, p, desconto)
+
+    let { detalhes: { fabricante: f, modelo = 'Não infromado' } } = produto         
+    console.log(f, modelo)
+
+    
+    
+    </script>    
+    
+</head>
+<body>
+    
+</body>
+</html>

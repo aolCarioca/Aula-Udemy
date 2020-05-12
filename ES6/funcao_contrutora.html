@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+    let Carro = function() {
+        this.cor = 'Amarelo'
+        this.modelo = 'Chevette'
+        this.velocidadeAtual = 0
+        this.velocidadeMaxima = 180
+        
+       // métodos dentro de funções contrutoras 
+       // atributo que recebe como valor uma função
+       this.acelerar = function() { 
+           //this.velocidadeAtual += 10
+
+            let velocidade = this.getVelocidadeAtual() + 10
+            this.setVelocidadeAtual(velocidade) 
+
+           }
+
+           this.getVelocidadeAtual = function(){
+               return this.velocidadeAtual 
+
+           } 
+           // Atributo do objeto VelocidadeAtual  
+           this.setVelocidadeAtual = function(velocidadeAtual){
+               this.velocidadeAtual = velocidadeAtual              
+           }
+        }
+
+    let carro = new Carro() // contruindo um objeto com base uma função.
+
+    console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`)
+    carro.acelerar()    
+    carro.acelerar()
+    carro.acelerar()    
+    console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`)
+
+    </script>    
+    
+</head>
+<body>
+  
+    
+</body>
+</html>
