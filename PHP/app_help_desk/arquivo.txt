@@ -1,0 +1,6 @@
+
+1#Notebook não liga#Hardware#Notebook não liga.
+1#Erro de impressão#Impressora#Não imprime.
+4#Telefone não funciona#Rede#Telefone Cisco modelo 6886 não liga.
+4#Maria abriu chamado#Hardware#Micro não liga.
+3#Teste de Gravação#Hardware#Teste, Teste,Teste,Teste,Teste,Teste,Teste,Teste,Teste,Teste,Teste,Teste,Teste,
